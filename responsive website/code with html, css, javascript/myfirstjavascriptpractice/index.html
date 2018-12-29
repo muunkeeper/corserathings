@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h1 id="A" class="exText">A</h1> &nbsp;
+	<h1 id="B" class="exText">B</h1> &nbsp;
+	<h1 id="C" class="exText">C</h1> &nbsp;
+	<h1 id="Target" class="chText">Here!</h1>
+</div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+	$(".exText").click(
+		function(){
+			$("#Target").html($(this).attr("id"));
+		}
+	);
+</script>
